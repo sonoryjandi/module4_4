@@ -12,6 +12,7 @@ public class HTMLServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         resp.setStatus(HttpServletResponse.SC_OK);
-        resp.getWriter().println("kek");
+        resp.getWriter().println("start page");
+//        resp.getWriter()
     }
 }

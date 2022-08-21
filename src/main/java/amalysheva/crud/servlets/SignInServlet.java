@@ -1,31 +1,36 @@
 package amalysheva.crud.servlets;
 
+import amalysheva.crud.entities.User;
+
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import java.io.*;
 
+@WebServlet(urlPatterns = {"/signin/*"})
 public class SignInServlet extends HttpServlet {
+    private final static File signInPage = new File("C:\\Users\\real_\\IdeaProjects\\module4_4\\src\\main\\resources\\signIn.html");
+    private int idUser;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        resp.getWriter().println(PageGenerator.instance().getPage("page.html"));
-//
-//        resp.setContentType("text/html;charset=utf-8");
-//        resp.setStatus(HttpServletResponse.SC_OK);
-//        super.doGet(req, resp);
-
-        resp.setContentType("text/html");
+        resp.setContentType("text/html; charset=utf-8");
         resp.setStatus(HttpServletResponse.SC_OK);
         resp.getWriter().println("get sign in");
+        resp.getWriter().println(readPage(signInPage));
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        resp.setContentType("text/html");
+        resp.setContentType("text/html; charset=utf-8");
         resp.setStatus(HttpServletResponse.SC_OK);
-        resp.getWriter().println("post sign in");
+        resp.getWriter().println("post sign up");
+        String login = req.getParameter("login");
+        String password = req.getParameter("password");
+        User newUser = new User(login, password);
+        resp.getWriter().println("New user: " + getIdUser() + newUser);
 
 //        Map<String, Object> pageVariables = createPageVariablesMap(request);
 //
@@ -43,7 +48,22 @@ public class SignInServlet extends HttpServlet {
 //        response.getWriter().println(PageGenerator.instance().getPage("page.html", pageVariables));
     }
 
-    // doGet
+    public String readPage(File pageForReading) throws IOException {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(pageForReading)));
+            String content;
+            StringBuilder answer = new StringBuilder();
+            while ((content = reader.readLine()) != null) {
+                answer.append(content);
+                System.out.println(content);
+            }
+            return answer.toString();
+        }
 
-    //doPost
+    public int getIdUser() {
+        return idUser;
+    }
+
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
+    }
 }

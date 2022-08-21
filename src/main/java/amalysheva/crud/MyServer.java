@@ -10,8 +10,8 @@ public class MyServer {
         Server server = new Server(8080);
         ServletContextHandler contextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS);
         contextHandler.addServlet(SignInServlet.class, "/signin");
-        contextHandler.addServlet(SignUpServlet.class, "/signup");
-        contextHandler.addServlet(HTMLServlet.class, "/"); //root
+//        contextHandler.addServlet(SignUpServlet.class, "/signup");
+//        contextHandler.addServlet(HTMLServlet.class, "/"); //root
 
         server.setHandler(contextHandler);
         server.start();

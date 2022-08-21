@@ -4,31 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f306d783-52b2-4933-b82b-dfaa05213b9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="f306d783-52b2-4933-b82b-dfaa05213b9e" name="Changes" comment="initial commit">
       <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/AllRequestsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/MyServer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/PageGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/entities/Persistable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/services/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/HTMLServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/SignInServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/SignUpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/signIn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/exceptions/WrongPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/MySQLQueryUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/MySqLQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/TResultHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amalysheva/jija/DaoUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/firstpage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amalysheva/crud/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/MyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amalysheva/crud/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/repositories/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amalysheva/crud/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/HTMLServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/HTMLServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/SignInServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amalysheva/crud/servlets/SignUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signIn.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +73,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
         <option value="Interface" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -92,17 +91,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="amalysheva.CRUD" />
@@ -184,11 +183,30 @@
       <option name="presentableId" value="Default" />
       <updated>1660216780015</updated>
       <workItem from="1660216781464" duration="11135000" />
-      <workItem from="1660230246514" duration="2166000" />
+      <workItem from="1660230246514" duration="2897000" />
+      <workItem from="1660372088080" duration="9288000" />
+      <workItem from="1660575619793" duration="1926000" />
+      <workItem from="1660588685428" duration="601000" />
+      <workItem from="1660647616783" duration="6406000" />
+      <workItem from="1660764908782" duration="745000" />
+      <workItem from="1660807862675" duration="9398000" />
+      <workItem from="1661067999090" duration="856000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1660239944390</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660239944390</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
